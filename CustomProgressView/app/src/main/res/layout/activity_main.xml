@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <androidstack.progress.CustomProgressView
+        android:layout_width="wrap_content"
+        android:id="@+id/cpv"
+        android:layout_margin="16dp"
+        app:cp_background_color="#FFF3F3"
+        app:cp_progress_color="#FEC7CD"
+        app:cp_percent_textcolor="#666666"
+        android:layout_height="48dp"/>
+
+</LinearLayout>

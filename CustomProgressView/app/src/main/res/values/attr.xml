@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="CustomProgressView">
+        <!--百分比文字大小-->
+        <attr name="cp_percent_textsize" format="dimension"/>
+        <!--百分比文字颜色-->
+        <attr name="cp_percent_textcolor" format="color|integer"/>
+        <!--进度条背景颜色-->
+        <attr name="cp_background_color" format="color|integer"/>
+        <!--进度条背景是否空心-->
+        <attr name="cp_background_is_stroke" format="boolean"/>
+        <!--进度条颜色-->
+        <attr name="cp_progress_color" format="color|integer"/>
+        <!--进度条圆角值-->
+        <attr name="cp_rect_round" format="dimension"/>
+
+    </declare-styleable>
+</resources>
