@@ -16,4 +16,13 @@
         app:cp_percent_textcolor="#666666"
         android:layout_height="48dp"/>
 
+
+    <Button
+        android:layout_width="match_parent"
+        android:onClick="customView"
+        android:text="customView"
+        android:layout_height="wrap_content">
+
+    </Button>
+
 </LinearLayout>

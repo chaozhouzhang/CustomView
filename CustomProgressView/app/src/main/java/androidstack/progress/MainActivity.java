@@ -1,7 +1,9 @@
 package androidstack.progress;
 
+import android.content.Intent;
 import android.graphics.Color;
 import android.os.Bundle;
+import android.view.View;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -27,4 +29,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
 
+    public void customView(View view) {
+        startActivity(new Intent(this,CustomViewActivity.class));
+    }
 }
