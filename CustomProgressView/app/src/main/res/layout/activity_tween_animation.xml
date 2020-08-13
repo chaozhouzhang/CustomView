@@ -53,6 +53,33 @@
                 android:layout_height="wrap_content">
 
             </Button>
+
+
+
+            <Button
+                android:layout_width="match_parent"
+                android:text="镜头由远及近效果"
+                android:id="@+id/btn_camera"
+                android:layout_height="wrap_content">
+
+            </Button>
+
+            <Button
+                android:layout_width="match_parent"
+                android:text="加载效果"
+                android:id="@+id/btn_loading"
+                android:layout_height="wrap_content">
+
+            </Button>
+
+
+            <Button
+                android:layout_width="match_parent"
+                android:text="扫描效果"
+                android:id="@+id/btn_scanner"
+                android:layout_height="wrap_content">
+
+            </Button>
         </LinearLayout>
 
     </androidx.core.widget.NestedScrollView>

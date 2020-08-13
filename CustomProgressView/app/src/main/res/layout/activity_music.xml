@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <View
+        android:layout_width="140dp"
+        android:id="@+id/iv_1"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:background="@drawable/shape_scanner"
+        android:layout_height="150dp">
+    </View>
+    <View
+        android:layout_width="140dp"
+        android:id="@+id/iv_2"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:background="@drawable/shape_scanner"
+        android:layout_height="150dp">
+    </View>
+
+    <View
+        android:layout_width="140dp"
+        android:id="@+id/iv_3"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:background="@drawable/shape_scanner"
+        android:layout_height="150dp">
+    </View>
+
+    <View
+        android:layout_width="140dp"
+        android:id="@+id/iv_4"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:background="@drawable/shape_scanner"
+        android:layout_height="140dp">
+    </View>
+    <ImageView
+        android:layout_width="155dp"
+        android:id="@+id/iv_scanner"
+        app:layout_constraintTop_toTopOf="parent"
+        android:src="@mipmap/ic_scanner"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+
+        android:layout_height="155dp">
+    </ImageView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

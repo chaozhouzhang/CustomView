@@ -23,6 +23,9 @@ public class TweenAnimationActivity extends AppCompatActivity implements View.On
     private Button mBtnTranslate;
     private Button mBtnRotate;
     private Button mBtnSet;
+    private Button mBtnCamera;
+    private Button mBtnLoading;
+    private Button mBtnScanner;
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -37,6 +40,12 @@ public class TweenAnimationActivity extends AppCompatActivity implements View.On
         mBtnRotate.setOnClickListener(this);
         mBtnSet = findViewById(R.id.btn_set_animation);
         mBtnSet.setOnClickListener(this);
+        mBtnCamera = findViewById(R.id.btn_camera);
+        mBtnCamera.setOnClickListener(this);
+        mBtnLoading = findViewById(R.id.btn_loading);
+        mBtnLoading.setOnClickListener(this);
+        mBtnScanner = findViewById(R.id.btn_scanner);
+        mBtnScanner.setOnClickListener(this);
     }
 
     @Override
@@ -56,6 +65,16 @@ public class TweenAnimationActivity extends AppCompatActivity implements View.On
                 break;
             case R.id.btn_set_animation:
                 startActivity(new Intent(this,SetAnimationActivity.class));
+                break;
+            case R.id.btn_camera:
+                startActivity(new Intent(this,CameraActivity.class));
+                break;
+            case R.id.btn_loading:
+                startActivity(new Intent(this,LoadingActivity.class));
+                break;
+
+            case R.id.btn_scanner:
+                startActivity(new Intent(this,ScannerActivity.class));
                 break;
             default:
                 break;
