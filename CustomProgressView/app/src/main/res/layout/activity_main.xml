@@ -7,7 +7,7 @@
     android:orientation="vertical"
     tools:context=".MainActivity">
 
-    <androidstack.progress.CustomProgressView
+    <androidstack.progress.view.CustomProgressView
         android:layout_width="wrap_content"
         android:id="@+id/cpv"
         android:layout_margin="16dp"
@@ -17,10 +17,35 @@
         android:layout_height="48dp"/>
 
 
+
     <Button
         android:layout_width="match_parent"
-        android:onClick="customView"
-        android:text="customView"
+        android:text="视图基础"
+        android:id="@+id/btn_basis_view"
+        android:layout_height="wrap_content">
+    </Button>
+
+
+    <Button
+        android:layout_width="match_parent"
+        android:text="视图动画"
+        android:id="@+id/btn_view_animation"
+        android:layout_height="wrap_content">
+
+    </Button>
+
+    <Button
+        android:layout_width="match_parent"
+        android:text="插值器"
+        android:id="@+id/btn_view_interpolator"
+        android:layout_height="wrap_content">
+
+    </Button>
+
+    <Button
+        android:layout_width="match_parent"
+        android:text="属性动画"
+        android:id="@+id/btn_property_animation"
         android:layout_height="wrap_content">
 
     </Button>

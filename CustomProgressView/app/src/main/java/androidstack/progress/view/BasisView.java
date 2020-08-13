@@ -1,4 +1,4 @@
-package androidstack.progress;
+package androidstack.progress.view;
 
 import android.content.Context;
 import android.graphics.Bitmap;
@@ -15,6 +15,7 @@ import android.os.Build;
 import android.util.AttributeSet;
 import android.view.View;
 
+import androidstack.progress.R;
 import androidx.annotation.Nullable;
 
 /**

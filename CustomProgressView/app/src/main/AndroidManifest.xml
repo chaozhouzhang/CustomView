@@ -16,7 +16,17 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".CustomViewActivity" />
+        <activity android:name=".BasisViewActivity" />
+        <activity android:name=".animation.view.tween.ScaleAnimationActivity" />
+        <activity android:name=".animation.property.PropertyAnimationActivity" />
+        <activity android:name=".animation.view.ViewAnimationActivity" />
+        <activity android:name=".animation.view.frame.FrameAnimationActivity" />
+        <activity android:name=".animation.view.tween.AlphaAnimationActivity" />
+        <activity android:name=".animation.view.tween.TweenAnimationActivity" />
+        <activity android:name=".animation.view.tween.TranslateAnimationActivity" />
+        <activity android:name=".animation.view.tween.RotateAnimationActivity" />
+        <activity android:name=".animation.view.tween.SetAnimationActivity" />
+        <activity android:name=".animation.interpolator.InterpolatorActivity" />
     </application>
 
 </manifest>

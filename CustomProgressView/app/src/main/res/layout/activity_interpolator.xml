@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/ic_test"
+        android:layout_marginTop="50dp"
+        android:id="@+id/iv_test"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+    </ImageView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        app:layout_constraintTop_toBottomOf="@id/iv_test"
+        android:layout_marginTop="50dp"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:orientation="vertical"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:layout_width="match_parent"
+            android:text="加速减速插值器"
+            android:id="@+id/btn_accelerate_decelerate"
+            android:layout_height="wrap_content"/>
+
+
+        <Button
+            android:layout_width="match_parent"
+            android:text="加速插值器"
+            android:id="@+id/btn_accelerate"
+            android:layout_height="wrap_content">
+
+        </Button>
+
+        <Button
+            android:layout_width="match_parent"
+            android:text="减速插值器"
+            android:id="@+id/btn_decelerate"
+            android:layout_height="wrap_content">
+
+        </Button>
+
+
+        <Button
+            android:layout_width="match_parent"
+            android:text="线性插值器"
+            android:id="@+id/btn_linear"
+            android:layout_height="wrap_content">
+
+        </Button>
+
+
+        <Button
+            android:layout_width="match_parent"
+            android:text="弹跳插值器"
+            android:id="@+id/btn_bounce"
+            android:layout_height="wrap_content">
+
+        </Button>
+
+
+        <Button
+            android:layout_width="match_parent"
+            android:text="初始偏移插值器"
+            android:id="@+id/btn_anticipate"
+            android:layout_height="wrap_content">
+
+        </Button>
+
+        <Button
+            android:layout_width="match_parent"
+            android:text="结束偏移插值器"
+            android:id="@+id/btn_overshoot"
+            android:layout_height="wrap_content">
+
+        </Button>
+
+        <Button
+            android:layout_width="match_parent"
+            android:text="初始结束偏移插值器"
+            android:id="@+id/btn_anticipate_overshoot"
+            android:layout_height="wrap_content">
+
+        </Button>
+
+        <Button
+            android:layout_width="match_parent"
+            android:text="循环插值器"
+            android:id="@+id/btn_cycle"
+            android:layout_height="wrap_content">
+
+        </Button>
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
