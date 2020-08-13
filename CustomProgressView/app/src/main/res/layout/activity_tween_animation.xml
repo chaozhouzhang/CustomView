@@ -60,6 +60,7 @@
                 android:layout_width="match_parent"
                 android:text="镜头由远及近效果"
                 android:id="@+id/btn_camera"
+                android:layout_marginTop="64dp"
                 android:layout_height="wrap_content">
 
             </Button>

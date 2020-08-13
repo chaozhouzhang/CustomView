@@ -11,7 +11,7 @@
         android:toYScale="2" />
 
     <alpha
-        android:fromAlpha="0.4"
+        android:fromAlpha="0.5"
         android:repeatCount="infinite"
         android:toAlpha="0" />
 </set>

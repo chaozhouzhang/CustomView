@@ -27,9 +27,10 @@
         <activity android:name=".animation.view.tween.RotateAnimationActivity" />
         <activity android:name=".animation.view.tween.SetAnimationActivity" />
         <activity android:name=".animation.interpolator.InterpolatorActivity" />
-        <activity android:name=".animation.view.tween.CameraActivity" />
-        <activity android:name=".animation.view.tween.LoadingActivity" />
-        <activity android:name=".animation.view.tween.ScannerActivity" />
+        <activity android:name=".animation.view.tween.effect.CameraActivity" />
+        <activity android:name=".animation.view.tween.effect.LoadingActivity" />
+        <activity android:name=".animation.view.tween.effect.ScannerActivity" />
+        <activity android:name=".custom.CustomProgressActivity" />
     </application>
 
 </manifest>

@@ -1,4 +1,4 @@
-package androidstack.progress.animation.view.tween;
+package androidstack.progress.animation.view.tween.effect;
 
 import android.os.Bundle;
 import android.view.View;

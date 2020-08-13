@@ -3,18 +3,9 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical"
     tools:context=".MainActivity">
 
-    <androidstack.progress.view.CustomProgressView
-        android:layout_width="wrap_content"
-        android:id="@+id/cpv"
-        android:layout_margin="16dp"
-        app:cp_background_color="#FFF3F3"
-        app:cp_progress_color="#FEC7CD"
-        app:cp_percent_textcolor="#666666"
-        android:layout_height="48dp"/>
 
 
 
@@ -48,6 +39,13 @@
         android:id="@+id/btn_property_animation"
         android:layout_height="wrap_content">
 
+    </Button>
+
+    <Button
+        android:layout_width="match_parent"
+        android:text="自定义进度条"
+        android:id="@+id/btn_custom_progress"
+        android:layout_height="wrap_content">
     </Button>
 
 </LinearLayout>

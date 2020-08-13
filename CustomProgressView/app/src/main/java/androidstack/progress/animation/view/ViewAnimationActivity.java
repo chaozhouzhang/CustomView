@@ -6,6 +6,7 @@ import android.view.View;
 import android.widget.Button;
 
 import androidstack.progress.R;
+import androidstack.progress.animation.view.frame.FrameAnimationActivity;
 import androidstack.progress.animation.view.tween.TweenAnimationActivity;
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
@@ -19,6 +20,7 @@ import androidx.appcompat.app.AppCompatActivity;
  */
 public class ViewAnimationActivity extends AppCompatActivity implements View.OnClickListener {
     private Button mBtnTween;
+    private Button mBtnFrame;
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
@@ -26,6 +28,9 @@ public class ViewAnimationActivity extends AppCompatActivity implements View.OnC
         setContentView(R.layout.activity_view_animation);
         mBtnTween = findViewById(R.id.btn_tween_animation);
         mBtnTween.setOnClickListener(this);
+
+        mBtnFrame = findViewById(R.id.btn_frame_animation);
+        mBtnFrame.setOnClickListener(this);
     }
 
     @Override
@@ -33,6 +38,10 @@ public class ViewAnimationActivity extends AppCompatActivity implements View.OnC
         switch (v.getId()) {
             case R.id.btn_tween_animation:
                 startActivity(new Intent(this, TweenAnimationActivity.class));
+                break;
+
+            case R.id.btn_frame_animation:
+                startActivity(new Intent(this, FrameAnimationActivity.class));
                 break;
             default:
                 break;

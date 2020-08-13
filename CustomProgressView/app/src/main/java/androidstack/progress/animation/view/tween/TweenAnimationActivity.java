@@ -6,6 +6,9 @@ import android.view.View;
 import android.widget.Button;
 
 import androidstack.progress.R;
+import androidstack.progress.animation.view.tween.effect.CameraActivity;
+import androidstack.progress.animation.view.tween.effect.LoadingActivity;
+import androidstack.progress.animation.view.tween.effect.ScannerActivity;
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -67,14 +70,14 @@ public class TweenAnimationActivity extends AppCompatActivity implements View.On
                 startActivity(new Intent(this,SetAnimationActivity.class));
                 break;
             case R.id.btn_camera:
-                startActivity(new Intent(this,CameraActivity.class));
+                startActivity(new Intent(this, CameraActivity.class));
                 break;
             case R.id.btn_loading:
-                startActivity(new Intent(this,LoadingActivity.class));
+                startActivity(new Intent(this, LoadingActivity.class));
                 break;
 
             case R.id.btn_scanner:
-                startActivity(new Intent(this,ScannerActivity.class));
+                startActivity(new Intent(this, ScannerActivity.class));
                 break;
             default:
                 break;

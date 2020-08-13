@@ -1,7 +1,6 @@
 package androidstack.progress;
 
 import android.content.Intent;
-import android.graphics.Color;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -9,7 +8,7 @@ import android.widget.Button;
 import androidstack.progress.animation.interpolator.InterpolatorActivity;
 import androidstack.progress.animation.property.PropertyAnimationActivity;
 import androidstack.progress.animation.view.ViewAnimationActivity;
-import androidstack.progress.view.CustomProgressView;
+import androidstack.progress.custom.CustomProgressActivity;
 import androidx.appcompat.app.AppCompatActivity;
 
 /**
@@ -17,24 +16,16 @@ import androidx.appcompat.app.AppCompatActivity;
  */
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
 
-    private CustomProgressView mCustomProgressView;
     private Button mBtnBasisView;
     private Button mBtnViewAnimation;
     private Button mBtnPropertyAnimation;
     private Button mBtnInterpolator;
+    private Button mBtnProgress;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        mCustomProgressView = findViewById(R.id.cpv);
-        mCustomProgressView.setProgressMax(100);
-        mCustomProgressView.setCpBackgroundColor(Color.parseColor("#FFF3F3"));
-        mCustomProgressView.setCpPercentTextcolor(Color.parseColor("#666666"));
-        mCustomProgressView.setCpProgressColor(Color.parseColor("#FEC7CD"));
-        mCustomProgressView.setProgressCurrent(40);
-        mCustomProgressView.setCpBackgroundIsStroke(false);
-        mCustomProgressView.setCpPercentTextsize(40);
 
 
 
@@ -46,6 +37,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         mBtnPropertyAnimation.setOnClickListener(this);
         mBtnInterpolator = findViewById(R.id.btn_view_interpolator);
         mBtnInterpolator.setOnClickListener(this);
+        mBtnProgress = findViewById(R.id.btn_custom_progress);
+        mBtnProgress.setOnClickListener(this);
     }
 
 
@@ -65,6 +58,10 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
             case R.id.btn_view_interpolator:
                 startActivity(new Intent(this, InterpolatorActivity.class));
+                break;
+
+            case R.id.btn_custom_progress:
+                startActivity(new Intent(this, CustomProgressActivity.class));
                 break;
             default:
                 break;
