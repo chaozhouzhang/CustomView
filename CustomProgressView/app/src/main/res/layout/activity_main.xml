@@ -28,7 +28,7 @@
     <Button
         android:layout_width="match_parent"
         android:text="插值器"
-        android:id="@+id/btn_view_interpolator"
+        android:id="@+id/btn_interpolator"
         android:layout_height="wrap_content">
 
     </Button>
@@ -39,6 +39,13 @@
         android:id="@+id/btn_property_animation"
         android:layout_height="wrap_content">
 
+    </Button>
+
+    <Button
+        android:layout_width="match_parent"
+        android:text="估值器"
+        android:id="@+id/btn_evaluator"
+        android:layout_height="wrap_content">
     </Button>
 
     <Button

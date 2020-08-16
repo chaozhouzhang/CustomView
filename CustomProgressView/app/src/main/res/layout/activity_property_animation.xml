@@ -2,5 +2,84 @@
 <androidx.constraintlayout.widget.ConstraintLayout
     xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
     android:layout_height="match_parent">
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
 
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_height="match_parent">
+
+            <Button
+                android:layout_width="match_parent"
+                android:text="值动画"
+                android:id="@+id/btn_value_animator"
+                android:layout_height="wrap_content">
+            </Button>
+
+            <Button
+                android:layout_width="match_parent"
+                android:text="值动画抛物线"
+                android:id="@+id/btn_value_falling"
+                android:layout_height="wrap_content">
+            </Button>
+
+
+            <Button
+                android:layout_width="match_parent"
+                android:text="对象动画"
+                android:id="@+id/btn_object_animator"
+                android:layout_height="wrap_content">
+            </Button>
+
+
+            <Button
+                android:layout_width="match_parent"
+                android:text="对象动画抛物线"
+                android:id="@+id/btn_object_falling"
+                android:layout_height="wrap_content">
+            </Button>
+
+            <Button
+                android:layout_width="match_parent"
+                android:text="组合动画"
+                android:id="@+id/btn_animator_set"
+                android:layout_height="wrap_content">
+            </Button>
+
+
+            <Button
+                android:layout_width="match_parent"
+                android:text="菜单动画"
+                android:id="@+id/btn_animator_menu"
+                android:layout_height="wrap_content">
+            </Button>
+
+
+            <Button
+                android:layout_width="match_parent"
+                android:text="高级属性动画"
+                android:id="@+id/btn_animator_advanced"
+                android:layout_height="wrap_content">
+            </Button>
+
+            <Button
+                android:layout_width="match_parent"
+                android:text="电话铃响动画"
+                android:id="@+id/btn_animator_phone"
+                android:layout_height="wrap_content">
+            </Button>
+
+            <Button
+                android:layout_width="match_parent"
+                android:text="ViewGroup内控件动画"
+                android:id="@+id/btn_animator_view_group"
+                android:layout_height="wrap_content">
+            </Button>
+
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
 </androidx.constraintlayout.widget.ConstraintLayout>

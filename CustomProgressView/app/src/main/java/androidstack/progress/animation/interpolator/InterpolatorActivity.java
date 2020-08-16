@@ -22,14 +22,15 @@ import androidx.appcompat.app.AppCompatActivity;
 
 /**
  * Created on 2020/8/13 09:19
- *
+ * 插值器，定义动画数值的进度变化规律
+ * 视图动画的插值器实现的是Interpolator接口，属性动画的插值器实现的是TimeInterpolator接口
+ * 而Interpolator接口继承的是TimeInterpolator接口。
  * @author zhangchaozhou
  * @email 13760289294@139.com
  * @wechat 13760289294
  */
 public class InterpolatorActivity extends AppCompatActivity implements View.OnClickListener {
     private ImageView mIvTest;
-
     private Button mBtnAccelerateDecelerate;
     private Button mBtnAccelerate;
     private Button mBtnDecelerate;
@@ -39,6 +40,7 @@ public class InterpolatorActivity extends AppCompatActivity implements View.OnCl
     private Button mBtnAnticipate;
     private Button mBtnAnticipateOvershoot;
     private Button mBtnCycle;
+    private Button mBtnReverse;
 
 
     @Override
@@ -57,6 +59,7 @@ public class InterpolatorActivity extends AppCompatActivity implements View.OnCl
         mBtnAnticipate = findViewById(R.id.btn_anticipate);
         mBtnAnticipateOvershoot = findViewById(R.id.btn_anticipate_overshoot);
         mBtnCycle = findViewById(R.id.btn_cycle);
+        mBtnReverse = findViewById(R.id.btn_cycle);
 
         mBtnAccelerateDecelerate.setOnClickListener(this);
         mBtnAccelerate.setOnClickListener(this);
@@ -67,6 +70,7 @@ public class InterpolatorActivity extends AppCompatActivity implements View.OnCl
         mBtnAnticipate.setOnClickListener(this);
         mBtnAnticipateOvershoot.setOnClickListener(this);
         mBtnCycle.setOnClickListener(this);
+        mBtnReverse.setOnClickListener(this);
 
     }
 
@@ -109,6 +113,10 @@ public class InterpolatorActivity extends AppCompatActivity implements View.OnCl
                 break;
             case R.id.btn_cycle:
                 translateAnimation.setInterpolator(new CycleInterpolator(1));
+                break;
+
+            case R.id.btn_reverse:
+                translateAnimation.setInterpolator(new ReverseInterpolator());
                 break;
             default:
                 break;

@@ -31,6 +31,17 @@
         <activity android:name=".animation.view.tween.effect.LoadingActivity" />
         <activity android:name=".animation.view.tween.effect.ScannerActivity" />
         <activity android:name=".custom.CustomProgressActivity" />
+        <activity android:name=".animation.property.value.ValueAnimatorActivity" />
+        <activity android:name=".animation.property.evaluator.EvaluatorActivity" />
+        <activity android:name=".animation.property.value.FallingBallValueActivity" />
+        <activity android:name=".animation.property.object.ObjectAnimatorActivity" />
+        <activity android:name=".animation.property.object.FallingBallObjectActivity" />
+        <activity android:name=".animation.property.set.AnimatorSetActivity" />
+        <activity android:name=".animation.property.set.MenuActivity" />
+        <activity android:name=".animation.property.advanced.AdvancedPropertyActivity" />
+        <activity android:name=".animation.property.advanced.PhoneActivity" />
+        <activity android:name=".animation.property.advanced.ViewGroupAnimateActivity" />
+        <activity android:name=".animation.advanced.PathMeasureActivity" />
     </application>
 
 </manifest>

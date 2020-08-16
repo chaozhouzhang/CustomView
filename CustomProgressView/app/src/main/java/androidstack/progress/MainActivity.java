@@ -9,6 +9,7 @@ import androidstack.progress.animation.interpolator.InterpolatorActivity;
 import androidstack.progress.animation.property.PropertyAnimationActivity;
 import androidstack.progress.animation.view.ViewAnimationActivity;
 import androidstack.progress.custom.CustomProgressActivity;
+import androidstack.progress.animation.property.evaluator.EvaluatorActivity;
 import androidx.appcompat.app.AppCompatActivity;
 
 /**
@@ -20,6 +21,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     private Button mBtnViewAnimation;
     private Button mBtnPropertyAnimation;
     private Button mBtnInterpolator;
+    private Button mBtnEvaluator;
     private Button mBtnProgress;
 
     @Override
@@ -35,10 +37,12 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         mBtnViewAnimation.setOnClickListener(this);
         mBtnPropertyAnimation = findViewById(R.id.btn_property_animation);
         mBtnPropertyAnimation.setOnClickListener(this);
-        mBtnInterpolator = findViewById(R.id.btn_view_interpolator);
+        mBtnInterpolator = findViewById(R.id.btn_interpolator);
         mBtnInterpolator.setOnClickListener(this);
         mBtnProgress = findViewById(R.id.btn_custom_progress);
         mBtnProgress.setOnClickListener(this);
+        mBtnEvaluator = findViewById(R.id.btn_evaluator);
+        mBtnEvaluator.setOnClickListener(this);
     }
 
 
@@ -56,8 +60,11 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 startActivity(new Intent(this, PropertyAnimationActivity.class));
                 break;
 
-            case R.id.btn_view_interpolator:
+            case R.id.btn_interpolator:
                 startActivity(new Intent(this, InterpolatorActivity.class));
+                break;
+            case R.id.btn_evaluator:
+                startActivity(new Intent(this, EvaluatorActivity.class));
                 break;
 
             case R.id.btn_custom_progress:
