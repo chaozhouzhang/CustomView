@@ -5,11 +5,15 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
+import androidstack.progress.animation.advanced.PathMeasureActivity;
 import androidstack.progress.animation.interpolator.InterpolatorActivity;
 import androidstack.progress.animation.property.PropertyAnimationActivity;
+import androidstack.progress.animation.property.evaluator.EvaluatorActivity;
 import androidstack.progress.animation.view.ViewAnimationActivity;
 import androidstack.progress.custom.CustomProgressActivity;
-import androidstack.progress.animation.property.evaluator.EvaluatorActivity;
+import androidstack.progress.svg.SvgActivity;
+import androidstack.progress.svg.lottie.LottieActivity;
+import androidstack.progress.svg.svga.SvgaActivity;
 import androidx.appcompat.app.AppCompatActivity;
 
 /**
@@ -23,14 +27,15 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     private Button mBtnInterpolator;
     private Button mBtnEvaluator;
     private Button mBtnProgress;
+    private Button mBtnPathAnimation;
+    private Button mBtnSvga;
+    private Button mBtnLottie;
+    private Button mBtnSvg;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-
-
-
         mBtnBasisView = findViewById(R.id.btn_basis_view);
         mBtnBasisView.setOnClickListener(this);
         mBtnViewAnimation = findViewById(R.id.btn_view_animation);
@@ -43,6 +48,15 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         mBtnProgress.setOnClickListener(this);
         mBtnEvaluator = findViewById(R.id.btn_evaluator);
         mBtnEvaluator.setOnClickListener(this);
+        mBtnPathAnimation = findViewById(R.id.btn_path_animation);
+        mBtnPathAnimation.setOnClickListener(this);
+        mBtnSvga = findViewById(R.id.btn_svga);
+        mBtnSvga.setOnClickListener(this);
+        mBtnLottie = findViewById(R.id.btn_lottie);
+        mBtnLottie.setOnClickListener(this);
+
+        mBtnSvg= findViewById(R.id.btn_svg);
+        mBtnSvg.setOnClickListener(this);
     }
 
 
@@ -69,6 +83,22 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
             case R.id.btn_custom_progress:
                 startActivity(new Intent(this, CustomProgressActivity.class));
+                break;
+
+            case R.id.btn_path_animation:
+                startActivity(new Intent(this, PathMeasureActivity.class));
+                break;
+
+            case R.id.btn_svga:
+                startActivity(new Intent(this, SvgaActivity.class));
+                break;
+
+            case R.id.btn_lottie:
+                startActivity(new Intent(this, LottieActivity.class));
+                break;
+
+            case R.id.btn_svg:
+                startActivity(new Intent(this, SvgActivity.class));
                 break;
             default:
                 break;
