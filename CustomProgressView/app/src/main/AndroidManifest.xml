@@ -47,7 +47,9 @@
         <activity android:name=".svg.SvgActivity" />
         <activity android:name=".svg.svga.SvgaActivity" />
         <activity android:name=".svg.lottie.LottieActivity" />
-        <activity android:name=".matrix.MatrixActivity" />
+        <activity android:name=".drawing.matrix.MatrixActivity" />
+        <activity android:name=".drawing.PaintActivity" />
+        <activity android:name=".MaskActivity" />
     </application>
 
 </manifest>

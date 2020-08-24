@@ -31,6 +31,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     private Button mBtnSvga;
     private Button mBtnLottie;
     private Button mBtnSvg;
+    private Button mBtnMask;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -57,6 +58,13 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
         mBtnSvg= findViewById(R.id.btn_svg);
         mBtnSvg.setOnClickListener(this);
+
+
+        mBtnMask = findViewById(R.id.btn_mask);
+        mBtnMask.setOnClickListener(this);
+
+
+
     }
 
 
@@ -99,6 +107,10 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
             case R.id.btn_svg:
                 startActivity(new Intent(this, SvgActivity.class));
+                break;
+
+            case R.id.btn_mask:
+                startActivity(new Intent(this, MaskActivity.class));
                 break;
             default:
                 break;

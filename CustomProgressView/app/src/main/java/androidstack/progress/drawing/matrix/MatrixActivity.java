@@ -1,4 +1,4 @@
-package androidstack.progress.matrix;
+package androidstack.progress.drawing.matrix;
 
 import android.os.Bundle;
 

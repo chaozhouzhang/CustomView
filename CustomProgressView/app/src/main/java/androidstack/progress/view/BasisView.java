@@ -191,7 +191,8 @@ public class BasisView extends View {
          setShader(Shader shader) 设置图像渐变效果
          setStrokeJoin(Paint.Join join) 设置图像结合方式
          setXfermode(Xfermode xfermode) 设置图像重叠效果
-         setPathEffect(PathEffect effect) 设置路径效果 reset() 恢复默认设置
+         setPathEffect(PathEffect effect) 设置路径效果
+         reset() 恢复默认设置
          */
         canvas.drawBitmap(mBitmap, 90, 90, mPaint);
 
@@ -207,7 +208,57 @@ public class BasisView extends View {
          * setStyle(Style style) 设置画笔样式，FILL，STROKE，FILL_AND_STROKE setTypeface(Typeface typeface) 设置Typeface对象，即字体风格，包括粗体，斜体以及衬线体，非衬线体等
          */
         mPaint.setTextSize(90f);
+        /**
+         * 文字开始绘制的原点位置(x,y)在矩形中的相对位置，相对位置是根据所要绘制文字所在矩形来计算的。
+         * Paint.Align.LEFT 左边
+         * Paint.Align.CENTER 中间
+         * Paint.Align.RIGHT 右边
+         */
+        mPaint.setTextAlign(Paint.Align.LEFT);
+        /**
+         * Canvas.drawText(String text, float x, float y, Paint paint)
+         * 中的y是文字基线(baseline)的位置，x是文字开始绘制的位置在矩形中的相对位置。
+         */
         canvas.drawText("Android Stack", 200, 1000, mPaint);
+
+
+        /**
+         * 绘图四格线
+         * ascent 字符应当的最高高度所在线 正值
+         * descent 字符应当的最低高度所在线 负值
+         * top 字符可绘制的最高高度所在线 正值
+         * bottom 字符可绘制的最低高度所在线 负值
+         */
+        Paint.FontMetrics fontMetrics = mPaint.getFontMetrics();
+        /**
+         * 以下均为四格线与基准线Y值的差值
+         * 其中是leading上一行字符的descent到下一行的ascent之间的距离，也就是相邻行间的空白距离。
+         */
+        System.out.println(fontMetrics.ascent);
+        System.out.println(fontMetrics.descent);
+        System.out.println(fontMetrics.top);
+        System.out.println(fontMetrics.bottom);
+        System.out.println(fontMetrics.leading);
+
+
+        /**
+         * 高度
+         */
+        int height = (int) (fontMetrics.top - fontMetrics.bottom);
+        /**
+         * 宽度
+         */
+        String text = "Android Stack";
+        int width = (int) mPaint.measureText(text);
+        /**
+         * 矩形
+         */
+        Rect rect = new Rect();
+        mPaint.getTextBounds(text, 0, text.length(), rect);
+
+
+        
+
 
 
         /**
@@ -233,7 +284,6 @@ public class BasisView extends View {
         mPaint.setStrokeWidth(5);
         mRectF.set(100, 850, 850, 1100);
         canvas.drawRoundRect(mRectF, 200f, 200f, mPaint);
-
 
 
         /**

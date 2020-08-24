@@ -84,4 +84,12 @@
     </Button>
 
 
+    <Button
+        android:layout_width="match_parent"
+        android:text="引导蒙版"
+        android:id="@+id/btn_mask"
+        android:layout_height="wrap_content">
+    </Button>
+
+
 </LinearLayout>
