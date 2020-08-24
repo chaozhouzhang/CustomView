@@ -158,21 +158,23 @@ public class GuideMask extends FrameLayout {
          */
         canvas.drawColor(mBgColor);
 
-        /**
-         * getGlobalVisibleRect()是View可见区域相对与屏幕来说的坐标位置。
-         * getLocalVisibleRect()是View可见区域想对于自己坐标的位置。
-         * 获取当前蒙版所在activity根布局的坐标位置。
-         */
-        mContentParent.getGlobalVisibleRect(mContentRect);
-        int topMargin = mContentRect.top;
+
         /**
          * 获取当前蒙版所目标的布局的坐标位置。
          */
         mTargetView.getGlobalVisibleRect(mTargetRect);
 
         /**
+         * getGlobalVisibleRect()是View可见区域相对与屏幕来说的坐标位置。
+         * getLocalVisibleRect()是View可见区域想对于自己坐标的位置。
+         * 获取当前蒙版所在activity根布局的坐标位置。
+         */
+        mContentParent.getGlobalVisibleRect(mContentRect);
+
+        /**
          * 需要绘制的坐标位置
          */
+        int topMargin = mContentRect.top;
         int left = mTargetRect.left - mPaddingLeft;
         mFenceRectF.left = left;
         int right = mTargetRect.right + mPaddingRight;
@@ -186,13 +188,20 @@ public class GuideMask extends FrameLayout {
          * ry：y方向上的圆角半径。
          */
         canvas.drawRoundRect(mFenceRectF, mRadius, mRadius, mFencePaint);
-
     }
 
 
     public void show() {
         //需要显示的蒙版布局：配置root为当前蒙版this，配置attachToRoot为true，也就是解析结束蒙版布局后，添加到当前蒙版中
         mMaskLayoutView = LayoutInflater.from(mMaskActivity).inflate(mMaskLayout, this, true);
+        mContentParent.post(new Runnable() {
+            @Override
+            public void run() {
+                //显示蒙版，也就是将当前蒙版加到mContentParent的FrameLayout布局上
+                mContentParent.addView(GuideMask.this, new LayoutParams(ViewGroup.LayoutParams.MATCH_PARENT, ViewGroup.LayoutParams.MATCH_PARENT));
+            }
+        });
+
         if (mCloseId != 0) {
             //在蒙版布局中找到点击关闭蒙版的控件
             mMaskLayoutView.findViewById(mCloseId).setOnClickListener(new OnClickListener() {
@@ -205,15 +214,6 @@ public class GuideMask extends FrameLayout {
                 }
             });
         }
-        this.setClickable(true);
-        mContentParent.post(new Runnable() {
-            @Override
-            public void run() {
-                //显示蒙版，也就是将当前蒙版加到mContentParent的FrameLayout布局上
-                mContentParent.addView(GuideMask.this, new LayoutParams(ViewGroup.LayoutParams.MATCH_PARENT, ViewGroup.LayoutParams.MATCH_PARENT));
-            }
-        });
-
     }
 
     public void dismiss() {
