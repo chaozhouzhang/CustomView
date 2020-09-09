@@ -58,7 +58,7 @@ public class SvgaActivity extends AppCompatActivity {
         SVGAParser.Companion.shareParser().init(this);
         SVGAParser parser = SVGAParser.Companion.shareParser();
         parser = new SVGAParser(this);
-        parser.decodeFromAssets("posche.svga", new SVGAParser.ParseCompletion() {
+        parser.decodeFromAssets("car.svga", new SVGAParser.ParseCompletion() {
             @Override
             public void onComplete(SVGAVideoEntity svgaVideoEntity) {
                 SVGADrawable drawable = new SVGADrawable(svgaVideoEntity);

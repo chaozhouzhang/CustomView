@@ -1,9 +1,11 @@
 package androidstack.progress;
 
 import android.content.Intent;
+import android.graphics.Color;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ImageView;
 
 import androidstack.progress.animation.advanced.PathMeasureActivity;
 import androidstack.progress.animation.interpolator.InterpolatorActivity;
@@ -11,9 +13,12 @@ import androidstack.progress.animation.property.PropertyAnimationActivity;
 import androidstack.progress.animation.property.evaluator.EvaluatorActivity;
 import androidstack.progress.animation.view.ViewAnimationActivity;
 import androidstack.progress.custom.CustomProgressActivity;
+import androidstack.progress.rv.layoutmanager.CardActivity;
+import androidstack.progress.rv.partrv.PartRvActivity;
 import androidstack.progress.svg.SvgActivity;
 import androidstack.progress.svg.lottie.LottieActivity;
 import androidstack.progress.svg.svga.SvgaActivity;
+import androidstack.progress.toolbar.ToolBarActivity;
 import androidx.appcompat.app.AppCompatActivity;
 
 /**
@@ -33,6 +38,11 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     private Button mBtnSvg;
     private Button mBtnMask;
 
+    private ImageView mIvTest;
+
+    private Button mBtnToolBar;
+    private Button mBtnRvCard;
+    private Button mBtnRvPart;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -63,8 +73,19 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         mBtnMask = findViewById(R.id.btn_mask);
         mBtnMask.setOnClickListener(this);
 
+        mIvTest = findViewById(R.id.iv_test);
+        mIvTest.setColorFilter(Color.RED);
 
 
+        mBtnToolBar = findViewById(R.id.btn_tool_bar);
+        mBtnToolBar.setOnClickListener(this);
+
+        mBtnRvCard = findViewById(R.id.btn_rv_card);
+        mBtnRvCard.setOnClickListener(this);
+
+
+        mBtnRvPart = findViewById(R.id.btn_rv_part);
+        mBtnRvPart.setOnClickListener(this);
     }
 
 
@@ -72,6 +93,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     @Override
     public void onClick(View v) {
         switch (v.getId()){
+            case R.id.btn_tool_bar:
+                startActivity(new Intent(this, ToolBarActivity.class));
+                break;
             case R.id.btn_basis_view:
                 startActivity(new Intent(this,BasisViewActivity.class));
                 break;
@@ -111,6 +135,12 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
             case R.id.btn_mask:
                 startActivity(new Intent(this, MaskActivity.class));
+                break;
+            case R.id.btn_rv_card:
+                startActivity(new Intent(this, CardActivity.class));
+                break;
+            case R.id.btn_rv_part:
+                startActivity(new Intent(this, PartRvActivity.class));
                 break;
             default:
                 break;

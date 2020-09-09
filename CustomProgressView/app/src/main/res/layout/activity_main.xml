@@ -1,95 +1,122 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:orientation="vertical"
-    tools:context=".MainActivity">
+    tools:context=".MainActivity"
+    android:layout_height="match_parent">
 
-
-
-
-    <Button
+    <LinearLayout
         android:layout_width="match_parent"
-        android:text="视图基础"
-        android:id="@+id/btn_basis_view"
-        android:layout_height="wrap_content">
-    </Button>
+        android:layout_height="match_parent"
+        android:orientation="vertical">
 
 
-    <Button
-        android:layout_width="match_parent"
-        android:text="视图动画"
-        android:id="@+id/btn_view_animation"
-        android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/iv_test"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_margin="6dp"
+            android:src="@mipmap/add_focus_big">
 
-    </Button>
-
-    <Button
-        android:layout_width="match_parent"
-        android:text="插值器"
-        android:id="@+id/btn_interpolator"
-        android:layout_height="wrap_content">
-
-    </Button>
-
-    <Button
-        android:layout_width="match_parent"
-        android:text="属性动画"
-        android:id="@+id/btn_property_animation"
-        android:layout_height="wrap_content">
-
-    </Button>
-
-    <Button
-        android:layout_width="match_parent"
-        android:text="估值器"
-        android:id="@+id/btn_evaluator"
-        android:layout_height="wrap_content">
-    </Button>
+        </ImageView>
 
 
-    <Button
-        android:layout_width="match_parent"
-        android:text="路径动画"
-        android:id="@+id/btn_path_animation"
-        android:layout_height="wrap_content">
-    </Button>
-
-    <Button
-        android:layout_width="match_parent"
-        android:text="自定义进度条"
-        android:id="@+id/btn_custom_progress"
-        android:layout_height="wrap_content">
-    </Button>
-    <Button
-        android:layout_width="match_parent"
-        android:text="SVGA动画"
-        android:id="@+id/btn_svga"
-        android:layout_height="wrap_content">
-    </Button>
-
-    <Button
-        android:layout_width="match_parent"
-        android:text="Lottie动画"
-        android:id="@+id/btn_lottie"
-        android:layout_height="wrap_content">
-    </Button>
-
-    <Button
-        android:layout_width="match_parent"
-        android:text="SVG动画"
-        android:id="@+id/btn_svg"
-        android:layout_height="wrap_content">
-    </Button>
+        <Button
+            android:id="@+id/btn_basis_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="视图基础"></Button>
 
 
-    <Button
-        android:layout_width="match_parent"
-        android:text="引导蒙版"
-        android:id="@+id/btn_mask"
-        android:layout_height="wrap_content">
-    </Button>
+        <Button
+            android:id="@+id/btn_view_animation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="视图动画">
+
+        </Button>
+
+        <Button
+            android:id="@+id/btn_interpolator"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="插值器">
+
+        </Button>
+
+        <Button
+            android:id="@+id/btn_property_animation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="属性动画">
+
+        </Button>
+
+        <Button
+            android:id="@+id/btn_evaluator"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="估值器"></Button>
 
 
-</LinearLayout>
+        <Button
+            android:id="@+id/btn_path_animation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="路径动画"></Button>
+
+        <Button
+            android:id="@+id/btn_custom_progress"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="自定义进度条"></Button>
+
+        <Button
+            android:id="@+id/btn_svga"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="SVGA动画"></Button>
+
+        <Button
+            android:id="@+id/btn_lottie"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Lottie动画"></Button>
+
+        <Button
+            android:id="@+id/btn_svg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="SVG动画"></Button>
+
+
+        <Button
+            android:id="@+id/btn_mask"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="引导蒙版"></Button>
+
+        <Button
+            android:id="@+id/btn_tool_bar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="縮放工具欄"></Button>
+
+
+        <Button
+            android:id="@+id/btn_rv_card"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="卡片列表"></Button>
+
+
+        <Button
+            android:id="@+id/btn_rv_part"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="RV部分ITEM露出"></Button>
+    </LinearLayout>
+
+</ScrollView>

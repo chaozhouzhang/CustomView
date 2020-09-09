@@ -50,6 +50,9 @@
         <activity android:name=".drawing.matrix.MatrixActivity" />
         <activity android:name=".drawing.PaintActivity" />
         <activity android:name=".MaskActivity" />
+        <activity android:name=".toolbar.ToolBarActivity" />
+        <activity android:name=".rv.layoutmanager.CardActivity" />
+        <activity android:name=".rv.partrv.PartRvActivity" />
     </application>
 
 </manifest>

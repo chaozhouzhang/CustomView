@@ -15,4 +15,9 @@
         <attr name="cp_rect_round" format="dimension"/>
 
     </declare-styleable>
+
+    <declare-styleable name="Card">
+        <attr name="size" format="dimension|reference" />
+        <attr name="bgColor" format="color|reference" />
+    </declare-styleable>
 </resources>
