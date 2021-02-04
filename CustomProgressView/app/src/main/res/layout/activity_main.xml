@@ -91,6 +91,12 @@
             android:layout_height="wrap_content"
             android:text="SVG动画"></Button>
 
+        <Button
+            android:id="@+id/btn_svga_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="自定义文字SVGA动画"></Button>
+
 
         <Button
             android:id="@+id/btn_mask"

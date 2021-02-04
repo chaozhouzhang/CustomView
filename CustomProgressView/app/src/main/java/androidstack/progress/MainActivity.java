@@ -18,6 +18,7 @@ import androidstack.progress.rv.partrv.PartRvActivity;
 import androidstack.progress.svg.SvgActivity;
 import androidstack.progress.svg.lottie.LottieActivity;
 import androidstack.progress.svg.svga.SvgaActivity;
+import androidstack.progress.svg.svga.SvgaTextActivity;
 import androidstack.progress.toolbar.ToolBarActivity;
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -43,6 +44,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     private Button mBtnToolBar;
     private Button mBtnRvCard;
     private Button mBtnRvPart;
+    private Button mBtnSvgaText;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -86,6 +88,10 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
         mBtnRvPart = findViewById(R.id.btn_rv_part);
         mBtnRvPart.setOnClickListener(this);
+
+
+        mBtnSvgaText = findViewById(R.id.btn_svga_text);
+        mBtnSvgaText.setOnClickListener(this);
     }
 
 
@@ -123,6 +129,11 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
             case R.id.btn_svga:
                 startActivity(new Intent(this, SvgaActivity.class));
+                break;
+
+
+            case R.id.btn_svga_text:
+                startActivity(new Intent(this, SvgaTextActivity.class));
                 break;
 
             case R.id.btn_lottie:

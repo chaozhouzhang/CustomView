@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <com.opensource.svgaplayer.SVGAImageView
+        android:layout_width="match_parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:id="@+id/svga_text"
+        android:layout_height="400dp">
+
+
+    </com.opensource.svgaplayer.SVGAImageView>
+
+    <EditText
+        android:layout_width="match_parent"
+        app:layout_constraintTop_toBottomOf="@id/svga_text"
+        android:id="@+id/edt_svga_text"
+        android:layout_height="wrap_content">
+
+    </EditText>
+
+    <Button
+        android:id="@+id/btn_svga_text"
+        app:layout_constraintTop_toBottomOf="@id/edt_svga_text"
+        android:text="确认发送霓虹灯礼物"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    </Button>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

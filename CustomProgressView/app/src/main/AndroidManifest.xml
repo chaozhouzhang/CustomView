@@ -53,6 +53,7 @@
         <activity android:name=".toolbar.ToolBarActivity" />
         <activity android:name=".rv.layoutmanager.CardActivity" />
         <activity android:name=".rv.partrv.PartRvActivity" />
+        <activity android:name=".svg.svga.SvgaTextActivity" />
     </application>
 
 </manifest>
