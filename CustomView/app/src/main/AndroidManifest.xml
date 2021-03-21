@@ -54,6 +54,7 @@
         <activity android:name="androidstack.customview.rv.layoutmanager.CardActivity" />
         <activity android:name="androidstack.customview.rv.partrv.PartRvActivity" />
         <activity android:name="androidstack.customview.svg.svga.SvgaTextActivity" />
+        <activity android:name=".text.TextActivity" />
     </application>
 
 </manifest>

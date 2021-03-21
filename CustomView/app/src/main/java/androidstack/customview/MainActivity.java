@@ -19,6 +19,7 @@ import androidstack.customview.svg.SvgActivity;
 import androidstack.customview.svg.lottie.LottieActivity;
 import androidstack.customview.svg.svga.SvgaActivity;
 import androidstack.customview.svg.svga.SvgaTextActivity;
+import androidstack.customview.text.TextActivity;
 import androidstack.customview.toolbar.ToolBarActivity;
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -103,7 +104,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 startActivity(new Intent(this, ToolBarActivity.class));
                 break;
             case R.id.btn_basis_view:
-                startActivity(new Intent(this,BasisViewActivity.class));
+                startActivity(new Intent(this, TextActivity.class));
                 break;
             case R.id.btn_view_animation:
                 startActivity(new Intent(this, ViewAnimationActivity.class));
