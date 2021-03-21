@@ -1,5 +1,5 @@
-# CustomProgressView
-CustomProgressView
+# CustomView
+CustomView
 
 
 欢迎关注微信公众号：Android技术堆栈
