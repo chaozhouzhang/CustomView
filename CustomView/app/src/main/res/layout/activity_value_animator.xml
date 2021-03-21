@@ -16,7 +16,7 @@
 
     </ImageView>
 
-    <androidstack.progress.animation.property.value.LoadingImageView
+    <androidstack.customview.animation.property.value.LoadingImageView
         android:layout_width="wrap_content"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
@@ -25,6 +25,6 @@
         android:src="@mipmap/ic_test"
         android:layout_height="wrap_content">
 
-    </androidstack.progress.animation.property.value.LoadingImageView>
+    </androidstack.customview.animation.property.value.LoadingImageView>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

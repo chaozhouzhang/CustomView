@@ -4,7 +4,7 @@
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto">
 
-    <androidstack.progress.animation.property.object.FallingImageView
+    <androidstack.customview.animation.property.object.FallingImageView
         android:layout_width="50dp"
         android:src="@mipmap/ic_test"
         app:layout_constraintTop_toTopOf="parent"
@@ -12,6 +12,6 @@
         android:id="@+id/iv_ball"
         android:layout_height="50dp">
 
-    </androidstack.progress.animation.property.object.FallingImageView>
+    </androidstack.customview.animation.property.object.FallingImageView>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

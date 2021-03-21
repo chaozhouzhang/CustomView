@@ -4,10 +4,10 @@
     android:orientation="vertical"
     android:layout_height="match_parent">
 
-    <androidstack.progress.view.BasisView
+    <androidstack.customview.view.BasisView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content">
 
-    </androidstack.progress.view.BasisView>
+    </androidstack.customview.view.BasisView>
 
 </LinearLayout>

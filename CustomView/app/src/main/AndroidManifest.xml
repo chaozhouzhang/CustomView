@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="androidstack.progress">
+    package="androidstack.customview">
 
     <uses-permission android:name="android.permission.INTERNET"/>
     <application
@@ -9,51 +9,51 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:name=".App"
+        android:name="androidstack.customview.App"
         android:theme="@style/AppTheme">
-        <activity android:name=".MainActivity">
+        <activity android:name="androidstack.customview.MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".BasisViewActivity" />
-        <activity android:name=".animation.view.tween.ScaleAnimationActivity" />
-        <activity android:name=".animation.property.PropertyAnimationActivity" />
-        <activity android:name=".animation.view.ViewAnimationActivity" />
-        <activity android:name=".animation.view.frame.FrameAnimationActivity" />
-        <activity android:name=".animation.view.tween.AlphaAnimationActivity" />
-        <activity android:name=".animation.view.tween.TweenAnimationActivity" />
-        <activity android:name=".animation.view.tween.TranslateAnimationActivity" />
-        <activity android:name=".animation.view.tween.RotateAnimationActivity" />
-        <activity android:name=".animation.view.tween.SetAnimationActivity" />
-        <activity android:name=".animation.interpolator.InterpolatorActivity" />
-        <activity android:name=".animation.view.tween.effect.CameraActivity" />
-        <activity android:name=".animation.view.tween.effect.LoadingActivity" />
-        <activity android:name=".animation.view.tween.effect.ScannerActivity" />
-        <activity android:name=".custom.CustomProgressActivity" />
-        <activity android:name=".animation.property.value.ValueAnimatorActivity" />
-        <activity android:name=".animation.property.evaluator.EvaluatorActivity" />
-        <activity android:name=".animation.property.value.FallingBallValueActivity" />
-        <activity android:name=".animation.property.object.ObjectAnimatorActivity" />
-        <activity android:name=".animation.property.object.FallingBallObjectActivity" />
-        <activity android:name=".animation.property.set.AnimatorSetActivity" />
-        <activity android:name=".animation.property.set.MenuActivity" />
-        <activity android:name=".animation.property.advanced.AdvancedPropertyActivity" />
-        <activity android:name=".animation.property.advanced.PhoneActivity" />
-        <activity android:name=".animation.property.advanced.ViewGroupAnimateActivity" />
-        <activity android:name=".animation.advanced.PathMeasureActivity" />
-        <activity android:name=".svg.SvgActivity" />
-        <activity android:name=".svg.svga.SvgaActivity" />
-        <activity android:name=".svg.lottie.LottieActivity" />
-        <activity android:name=".drawing.matrix.MatrixActivity" />
-        <activity android:name=".drawing.PaintActivity" />
-        <activity android:name=".MaskActivity" />
-        <activity android:name=".toolbar.ToolBarActivity" />
-        <activity android:name=".rv.layoutmanager.CardActivity" />
-        <activity android:name=".rv.partrv.PartRvActivity" />
-        <activity android:name=".svg.svga.SvgaTextActivity" />
+        <activity android:name="androidstack.customview.BasisViewActivity" />
+        <activity android:name="androidstack.customview.animation.view.tween.ScaleAnimationActivity" />
+        <activity android:name="androidstack.customview.animation.property.PropertyAnimationActivity" />
+        <activity android:name="androidstack.customview.animation.view.ViewAnimationActivity" />
+        <activity android:name="androidstack.customview.animation.view.frame.FrameAnimationActivity" />
+        <activity android:name="androidstack.customview.animation.view.tween.AlphaAnimationActivity" />
+        <activity android:name="androidstack.customview.animation.view.tween.TweenAnimationActivity" />
+        <activity android:name="androidstack.customview.animation.view.tween.TranslateAnimationActivity" />
+        <activity android:name="androidstack.customview.animation.view.tween.RotateAnimationActivity" />
+        <activity android:name="androidstack.customview.animation.view.tween.SetAnimationActivity" />
+        <activity android:name="androidstack.customview.animation.interpolator.InterpolatorActivity" />
+        <activity android:name="androidstack.customview.animation.view.tween.effect.CameraActivity" />
+        <activity android:name="androidstack.customview.animation.view.tween.effect.LoadingActivity" />
+        <activity android:name="androidstack.customview.animation.view.tween.effect.ScannerActivity" />
+        <activity android:name="androidstack.customview.custom.CustomProgressActivity" />
+        <activity android:name="androidstack.customview.animation.property.value.ValueAnimatorActivity" />
+        <activity android:name="androidstack.customview.animation.property.evaluator.EvaluatorActivity" />
+        <activity android:name="androidstack.customview.animation.property.value.FallingBallValueActivity" />
+        <activity android:name="androidstack.customview.animation.property.object.ObjectAnimatorActivity" />
+        <activity android:name="androidstack.customview.animation.property.object.FallingBallObjectActivity" />
+        <activity android:name="androidstack.customview.animation.property.set.AnimatorSetActivity" />
+        <activity android:name="androidstack.customview.animation.property.set.MenuActivity" />
+        <activity android:name="androidstack.customview.animation.property.advanced.AdvancedPropertyActivity" />
+        <activity android:name="androidstack.customview.animation.property.advanced.PhoneActivity" />
+        <activity android:name="androidstack.customview.animation.property.advanced.ViewGroupAnimateActivity" />
+        <activity android:name="androidstack.customview.animation.advanced.PathMeasureActivity" />
+        <activity android:name="androidstack.customview.svg.SvgActivity" />
+        <activity android:name="androidstack.customview.svg.svga.SvgaActivity" />
+        <activity android:name="androidstack.customview.svg.lottie.LottieActivity" />
+        <activity android:name="androidstack.customview.drawing.matrix.MatrixActivity" />
+        <activity android:name="androidstack.customview.drawing.PaintActivity" />
+        <activity android:name="androidstack.customview.MaskActivity" />
+        <activity android:name="androidstack.customview.toolbar.ToolBarActivity" />
+        <activity android:name="androidstack.customview.rv.layoutmanager.CardActivity" />
+        <activity android:name="androidstack.customview.rv.partrv.PartRvActivity" />
+        <activity android:name="androidstack.customview.svg.svga.SvgaTextActivity" />
     </application>
 
 </manifest>
